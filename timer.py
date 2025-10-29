@@ -10,7 +10,7 @@ if "log" not in st.session_state:
     st.session_state.log = []
 
 # Set break interval (4 minutes)
-BREAK_INTERVAL = 4 * 60  # 240 seconds
+BREAK_INTERVAL = 2 * 60  # 240 seconds
 
 # Calculate elapsed time
 elapsed = time.time() - st.session_state.start_time

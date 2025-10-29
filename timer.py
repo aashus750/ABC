@@ -11,7 +11,7 @@ if "log" not in st.session_state:
     st.session_state.log = []  # Create an empty list to store user responses
 
 # Set the break interval to 4 minutes (in seconds)
-BREAK_INTERVAL = 4 * 60  # 240 seconds
+BREAK_INTERVAL = 1 * 60  # 240 seconds
 
 # Calculate how much time has passed since the timer started
 elapsed = time.time() - st.session_state.start_time
@@ -24,7 +24,7 @@ st.write(f"Elapsed time: {int(elapsed // 60)} minutes")
 
 # If the elapsed time exceeds the break interval, show a reminder
 if elapsed >= BREAK_INTERVAL:
-    st.warning("You've been active for over 4 minutes. Would you like to take a break?")
+    st.warning("You've been active for over 1 minutes. Would you like to take a break?")
     
     # Create two columns for Yes and No buttons
     col1, col2 = st.columns(2)
